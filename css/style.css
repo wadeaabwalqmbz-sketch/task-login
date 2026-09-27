@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -59,7 +60,6 @@ input {
   color: #a0aec0;
 }
 
-/* خلفية شريط القوة */
 .strength-meter {
   height: 6px;
   background-color: #edf2f7;
@@ -68,7 +68,6 @@ input {
   margin-top: 4px;
 }
 
-/* الجزء الملون المتغير في الشريط */
 .strength-bar {
   height: 100%;
   width: 0%;

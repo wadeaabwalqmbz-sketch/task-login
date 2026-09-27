@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Show Password</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <form>
+
+
+    <div>
+      <label>User Name</label>
+      <input type="User Name" placeholder="Your User Name.." >
+
+
+    <div>
+      <label>Email</label>
+      <input type="email" placeholder="Your Email..">
+    </div>
+
+    <div class="pass-wrapper">
+      <label>Password</label>
+      <input type="password" placeholder="Your Password.." >
+      <i class="fas fa-check"></i> 
+      <svg class="eye-closed" width="21px" height="21px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          transform="translate(2 10)">
+          <path d="m0 .5c2.53705308 3.66666667 5.37038642 5.5 8.5 5.5 3.1296136 0 5.9629469-1.83333333 8.5-5.5" />
+          <path d="m2.5 3.423-2 2.077" />
+          <path d="m14.5 3.423 2 2.077" />
+          <path d="m10.5 6 1 2.5" />
+          <path d="m6.5 6-1 2.5" />
+        </g>
+      </svg> 
+
+     
+    </div>
+
+    <button>Login</button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <form>
+
+     <div>
+      <label>User Name</label>
+      <input type="User Name" placeholder="Your User Name.." required>
+        </div>
+    <div>
+      <label>Email</label>
+      <input type="email" placeholder="Your Email.." required>
+    </div>
+
+    <div class="pass-wrapper">
+      <label>Password</label>
+
+      <!-- تم تحديد الحقل بين 8 و20 حرفاً من خلال maxlength -->
+      <div class="input-box">
+        <input type="password" required id="password" placeholder="Your Password.." maxlength="20">
+        <i class="fa-solid fa-eye-slash toggle-pass"></i>
+      </div>
+
+      <!-- شريط قياس القوة والنص -->
+      <div class="strength-meter">
+        <div class="strength-bar" id="strengthBar"></div>
+      </div>
+      <p class="strength-text" id="strengthText"></p>
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

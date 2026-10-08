@@ -21,3 +21,5 @@ products.forEach(product => {
     console.log(`التقييم: ${starsPattern} (${product.rating})`);
   }
 });
+
+
